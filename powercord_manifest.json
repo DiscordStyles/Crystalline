@@ -1,9 +1,9 @@
 {
-	"name": "Mineral",
+	"name": "Crystalline",
 	"description": "A beautiful frosted glass theme with support for both dark and light themes.",
 	"version": "0.0.1",
 	"author": "Gibbu",
-	"theme": "Mineral.theme.css",
+	"theme": "Crystalline.theme.css",
 	"consent": ["ext_listing"],
 	"license": "MIT"
 }
