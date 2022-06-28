@@ -1,0 +1,18 @@
+#app-mount {
+	.channel-1Shao0 {
+		max-width: unset;
+		margin: 0;
+		padding: 0;
+	}
+	.interactive-1vLZ_I {
+		padding: 4px 8px 4px 16px;
+		border-radius: 0;
+		.layout-1LjVue {
+			padding-left: 0;
+		}
+		&.selected-3veCBZ {
+			background: var(--fg-active);
+			box-shadow: inset 1px 0 0 rgb(var(--accent));
+		}
+	}
+}

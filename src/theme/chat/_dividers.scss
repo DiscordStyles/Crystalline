@@ -1,0 +1,24 @@
+#app-mount {
+	.divider-IqmEqJ {
+		margin: 2rem 0;
+		border: none;
+		&::before, &::after {
+			content: '';
+			height: 1px;
+			width: 100%;
+			background: var(--border);
+		}
+		&.isUnread-3Lojb- {
+			&::before, &::after {
+				background: var(--status-danger);
+			}
+		}
+	}
+	.content-3spvdd {
+		padding: 6px 24px;
+		background: var(--fg-main);
+		border: 1px solid var(--border);
+		font-weight: 400;
+		color: var(--text-normal);
+	}
+}

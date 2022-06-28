@@ -11,4 +11,17 @@
 	.bannerImg-2PzH6z {
 		width: 100%;
 	}
+
+	.searchBar-3TnChZ {
+		height: calc(var(--toolbar-height) - 1px);
+		box-shadow: none;
+		border-bottom: 1px solid var(--border);
+		padding: 0;
+		button {
+			height: 100%;
+			border-radius: 0;
+			background: transparent;
+			padding: 0 16px;
+		}
+	}
 }

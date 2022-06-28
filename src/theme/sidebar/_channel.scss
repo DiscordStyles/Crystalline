@@ -1,19 +1,21 @@
 #app-mount {
 	.wrapper-NhbLHG {
 		padding: 0;
+
+		.unread-36eUEm {
+			width: 1px;
+			height: 50%;
+			top: 50%;
+			margin: 0;
+			transform: translateY(-50%);
+		}
+
 		&:hover .content-1gYQeQ {
 			background: var(--fg-hover);
 		}
 		&.modeSelected-3DmyhH .content-1gYQeQ {
 			background: var(--fg-active);
-			&::before {
-				content: '';
-				position: absolute;
-				left: -1px;
-				height: 100%;
-				background: rgb(var(--accent));
-				width: 1px;
-			}
+			box-shadow: inset 1px 0 0 rgb(var(--accent));
 		}
 	}
 

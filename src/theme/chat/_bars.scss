@@ -10,9 +10,9 @@
 		&::before {
 			content: '';
 			position: absolute;
-			left: 0;
+			left: -1px;
 			height: 100%;
-			width: 2px;
+			width: 1px;
 			background: rgb(var(--accent));
 			z-index: 1;
 		}

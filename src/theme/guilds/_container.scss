@@ -1,7 +1,6 @@
 #app-mount {
 	.guilds-2JjMmN {
 		background: transparent;
-		border-right: 1px solid var(--border);
 		width: var(--guilds-width);
 	}
 	.listItem-3SmSlK {
@@ -48,6 +47,7 @@
 
 		& > div[aria-label] {
 			overflow: hidden auto !important;
+			padding: 16px 0;
 			&::-webkit-scrollbar {
 				display: none;
 			}

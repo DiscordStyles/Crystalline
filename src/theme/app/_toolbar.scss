@@ -3,10 +3,25 @@
 		background: transparent;
 		border-bottom: 1px solid var(--border);
 		height: var(--toolbar-height);
+		padding-right: 0;
+	}
+
+	.children-3xh0VB::after {
+		content: none;
 	}
 
 	.toolbar-3_r2xA {
 		height: 100%;
+		border-left: 1px solid var(--border);
+		margin-left: 16px;
+		& > .icon-1ELUnB:first-child {
+			margin-left: 16px;
+		}
+	}
+
+	.divider-q3P9HC {
+		height: var(--toolbar-height);
+		background: var(--border);
 	}
 
 	.search-39IXmY {
@@ -16,7 +31,8 @@
 		align-items: center;
 		border-left: 1px solid var(--border);
 		margin-right: 0;
-		width: calc(var(--members-width) - 8px);
+		width: var(--members-width);
+		margin-left: 16px;
 	}
 	.searchBar-jGtisZ {
 		width: var(--members-width);
