@@ -1,0 +1,30 @@
+#app-mount {
+	.message-2CShn3.selected-2LX7Jy {
+		background: var(--fg-hover);
+	}
+
+	.markup-eYLPri {
+		code {
+			background: var(--fg-main);
+			border-color: var(--border);
+		}
+	}
+	.embedWrapper-1MtIDg {
+		background: var(--fg-main);
+		border: 1px solid var(--border);
+		border-radius: var(--radius);
+		overflow: hidden;
+		.textContainer-36wgKK {
+			background: transparent;
+			border: none;
+		}
+		.footer-GXWBBp {
+			background: transparent;
+			border-top: 1px solid var(--border);
+		}
+	}
+}
+
+.mouse-mode.full-motion .message-2CShn3:hover {
+	background: var(--fg-hover);
+}

@@ -1,0 +1,11 @@
+.theme-light,
+html.theme-light #app-mount .theme-light .root-g14mjS,
+html.theme-light .force-theme.theme-light {
+	--border: hsl(0 0% 0% / .175);
+
+	--bg-main: hsl(0 0% 100% / var(--app-opacity));
+
+	--fg-main: hsl(0 0% 0% / .085);
+	--fg-hover: hsl(0 0% 0% / .035);
+	--fg-active: hsl(0 0% 0% / .075);
+}

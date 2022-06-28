@@ -1,0 +1,31 @@
+body::before {
+	content: "";
+	background-image: var(--app-image);
+	background-size: var(--app-image-size, cover);
+	background-position: var(--app-image-position, center);
+	background-attachment: var(--app-image-attachment, fixed);
+	position: absolute;
+	inset: 0;
+	filter: blur(var(--app-image-blur));
+}
+
+#app-mount {
+	background: var(--bg-main);
+
+	.app-2CXKsg {
+		background: transparent;
+	}
+
+	.bg-1QIAus {
+		background-image: var(--grain);
+		background-size: var(--grain-size, 100px);
+		mix-blend-mode: overlay;
+		inset: 0;
+		position: absolute;
+		opacity: var(--grain-opacity);
+	}
+
+	.base-2jDfDU {
+		overflow-x: visible !important;
+	}
+}

@@ -1,0 +1,11 @@
+.theme-dark,
+html.theme-dark #app-mount .theme-light .root-g14mjS,
+html.theme-dark .theme-light {
+	--border: hsl(0 0% 100% / .175);
+
+	--bg-main: hsl(0 0% 0% / var(--app-opacity));
+
+	--fg-main: hsl(0 0% 100% / .085);
+	--fg-hover: hsl(0 0% 100% / .035);
+	--fg-active: hsl(0 0% 100% / .075);
+}

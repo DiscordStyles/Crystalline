@@ -1,0 +1,25 @@
+#app-mount {
+	.newMessagesBar-1hF-9G {
+		left: 0;
+		right: 0;
+		border-bottom: 1px solid var(--border);
+		border-radius: 0;
+		opacity: 1;
+		box-shadow: none;
+		background: var(--bg-main);
+		&::before {
+			content: '';
+			position: absolute;
+			left: 0;
+			height: 100%;
+			width: 2px;
+			background: rgb(var(--accent));
+			z-index: 1;
+		}
+		button {
+			height: auto;
+			padding: 8px 16px;
+			backdrop-filter: blur(var(--app-blur));
+		}
+	}
+}

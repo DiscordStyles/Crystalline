@@ -1,0 +1,14 @@
+{
+	"name": "mineral",
+	"version": "1.0.0",
+	"description": "A beautiful frosted glass theme with support for both dark and light themes",
+	"author": "Gibbu",
+	"type": "module",
+	"scripts": {
+		"dev": "bd-scss dev",
+		"build": "bd-scss build"
+	},
+	"dependencies": {
+		"bd-scss": "^2.0.2"
+	}
+}

@@ -1,0 +1,26 @@
+#app-mount {
+	.wrapper-NhbLHG {
+		padding: 0;
+		&:hover .content-1gYQeQ {
+			background: var(--fg-hover);
+		}
+		&.modeSelected-3DmyhH .content-1gYQeQ {
+			background: var(--fg-active);
+			&::before {
+				content: '';
+				position: absolute;
+				left: -1px;
+				height: 100%;
+				background: rgb(var(--accent));
+				width: 1px;
+			}
+		}
+	}
+
+	.content-1gYQeQ {
+		padding: 4px 12px;
+		margin: 0;
+		border-radius: 0;
+		position: relative;
+	}
+}

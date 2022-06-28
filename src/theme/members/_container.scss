@@ -1,0 +1,18 @@
+#app-mount {
+	.container-2o3qEW {
+		background: transparent;
+	}
+	
+	.members-3WRCEx {
+		background: transparent;
+		border-left: 1px solid var(--border);
+		width: var(--members-width);
+		& > div {
+			background: transparent;
+		}
+	}
+
+	.content-2a4AW9 {
+		height: 100% !important;
+	}
+}

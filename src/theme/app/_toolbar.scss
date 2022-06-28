@@ -1,0 +1,54 @@
+#app-mount {
+	.title-31SJ6t {
+		background: transparent;
+		border-bottom: 1px solid var(--border);
+		height: var(--toolbar-height);
+	}
+
+	.toolbar-3_r2xA {
+		height: 100%;
+	}
+
+	.search-39IXmY {
+		order: 1;
+		height: 100%;
+		display: flex;
+		align-items: center;
+		border-left: 1px solid var(--border);
+		margin-right: 0;
+		width: calc(var(--members-width) - 8px);
+	}
+	.searchBar-jGtisZ {
+		width: var(--members-width);
+		height: var(--toolbar-height);
+		border-radius: 0%;
+		padding: 0;
+		background: transparent;
+		flex-direction: row-reverse;
+	}
+	.icon-tZMHgY {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		left: 16px;
+		z-index: 1;
+	}
+	.DraftEditor-root {
+		padding: 0;
+	}
+	.public-DraftEditorPlaceholder-root {
+		top: 50%;
+		transform: translateY(-50%);
+		padding: 0;
+		left: 49px;
+		font-weight: 400;
+	}
+	.DraftEditor-editorContainer {
+		height: 100%;
+		padding: 0 16px 0 48px;
+	}
+	.public-DraftEditor-content {
+		display: flex;
+		align-items: center;
+	}
+}

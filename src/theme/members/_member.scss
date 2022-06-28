@@ -1,0 +1,19 @@
+#app-mount {
+	.member-2gU6Ar {
+		margin: 0;
+		padding: 0;
+		max-width: unset;
+
+		.layout-1qmrhw {
+			border-radius: 0;
+			padding: 4px 16px;
+		}
+
+		&:hover .layout-1qmrhw {
+			background: var(--fg-hover);
+		}
+		&.selected-1-Z6gm .layout-1qmrhw {
+			background: var(--fg-active);
+		}
+	}
+}

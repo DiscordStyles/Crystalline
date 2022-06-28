@@ -1,0 +1,38 @@
+#app-mount {
+	.form-3gdLxP {
+		margin: 0;
+		padding: 0;
+		&::before {
+			content: none;
+		}
+	}
+
+	.channelTextArea-1FufC0 {
+		margin: 0;
+		background: transparent;
+	}
+	.scrollableContainer-15eg7h {
+		background: transparent;
+		min-height: var(--bottom-height);
+		border-top: 1px solid var(--border);
+		border-radius: 0;
+	}
+	.textArea-2CLwUE {
+		height: var(--bottom-height);
+	}
+	.placeholder-1rCBhr,
+	.slateTextArea-27tjG0 {
+		min-height: var(--bottom-height);
+		box-sizing: border-box;
+		display: flex;
+		justify-content: center;
+		flex: 1;
+		width: 100%;
+		flex-direction: column;
+	}
+
+	.attachButton-_ACFSu {
+		height: var(--bottom-height);
+		box-sizing: border-box;		
+	}
+}
