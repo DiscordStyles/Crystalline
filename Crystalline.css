@@ -53,17 +53,27 @@ body::before {
   position: absolute;
   opacity: var(--grain-opacity);
 }
-#app-mount .base-2jDfDU {
-  overflow-x: visible !important;
-}
 
 #app-mount .title-31SJ6t {
   background: transparent;
   border-bottom: 1px solid var(--border);
   height: var(--toolbar-height);
+  padding-right: 0;
+}
+#app-mount .children-3xh0VB::after {
+  content: none;
 }
 #app-mount .toolbar-3_r2xA {
   height: 100%;
+  border-left: 1px solid var(--border);
+  margin-left: 16px;
+}
+#app-mount .toolbar-3_r2xA > .icon-1ELUnB:first-child {
+  margin-left: 16px;
+}
+#app-mount .divider-q3P9HC {
+  height: var(--toolbar-height);
+  background: var(--border);
 }
 #app-mount .search-39IXmY {
   order: 1;
@@ -72,7 +82,8 @@ body::before {
   align-items: center;
   border-left: 1px solid var(--border);
   margin-right: 0;
-  width: calc(var(--members-width) - 8px);
+  width: var(--members-width);
+  margin-left: 16px;
 }
 #app-mount .searchBar-jGtisZ {
   width: var(--members-width);
@@ -215,11 +226,8 @@ body::before {
   background: transparent;
   width: var(--sidebar-width);
   border-right: 1px solid var(--border);
+  border-left: 1px solid var(--border);
   border-radius: 0;
-  overflow-x: visible !important;
-}
-#app-mount .sidebar-1tnWFu .scroller-1ox3I2 {
-  overflow-x: visible !important;
 }
 #app-mount .container-1NXEtd,
 #app-mount .privateChannels-oVe7HL {
@@ -241,19 +249,19 @@ body::before {
 #app-mount .wrapper-NhbLHG {
   padding: 0;
 }
+#app-mount .wrapper-NhbLHG .unread-36eUEm {
+  width: 1px;
+  height: 50%;
+  top: 50%;
+  margin: 0;
+  transform: translateY(-50%);
+}
 #app-mount .wrapper-NhbLHG:hover .content-1gYQeQ {
   background: var(--fg-hover);
 }
 #app-mount .wrapper-NhbLHG.modeSelected-3DmyhH .content-1gYQeQ {
   background: var(--fg-active);
-}
-#app-mount .wrapper-NhbLHG.modeSelected-3DmyhH .content-1gYQeQ::before {
-  content: "";
-  position: absolute;
-  left: -1px;
-  height: 100%;
-  background: rgb(var(--accent));
-  width: 1px;
+  box-shadow: inset 1px 0 0 rgb(var(--accent));
 }
 #app-mount .content-1gYQeQ {
   padding: 4px 12px;
@@ -273,10 +281,38 @@ body::before {
 #app-mount .bannerImg-2PzH6z {
   width: 100%;
 }
+#app-mount .searchBar-3TnChZ {
+  height: calc(var(--toolbar-height) - 1px);
+  box-shadow: none;
+  border-bottom: 1px solid var(--border);
+  padding: 0;
+}
+#app-mount .searchBar-3TnChZ button {
+  height: 100%;
+  border-radius: 0;
+  background: transparent;
+  padding: 0 16px;
+}
+
+#app-mount .channel-1Shao0 {
+  max-width: unset;
+  margin: 0;
+  padding: 0;
+}
+#app-mount .interactive-1vLZ_I {
+  padding: 4px 8px 4px 16px;
+  border-radius: 0;
+}
+#app-mount .interactive-1vLZ_I .layout-1LjVue {
+  padding-left: 0;
+}
+#app-mount .interactive-1vLZ_I.selected-3veCBZ {
+  background: var(--fg-active);
+  box-shadow: inset 1px 0 0 rgb(var(--accent));
+}
 
 #app-mount .guilds-2JjMmN {
   background: transparent;
-  border-right: 1px solid var(--border);
   width: var(--guilds-width);
 }
 #app-mount .listItem-3SmSlK {
@@ -319,6 +355,7 @@ body::before {
 }
 #app-mount .scroller-3X7KbA > div[aria-label] {
   overflow: hidden auto !important;
+  padding: 16px 0;
 }
 #app-mount .scroller-3X7KbA > div[aria-label]::-webkit-scrollbar {
   display: none;
@@ -358,6 +395,7 @@ body::before {
 
 #app-mount .chat-2ZfjoI {
   background: transparent;
+  overflow: visible;
 }
 #app-mount .content-1jQy2l::before {
   content: none;
@@ -436,9 +474,9 @@ body::before {
 #app-mount .newMessagesBar-1hF-9G::before {
   content: "";
   position: absolute;
-  left: 0;
+  left: -1px;
   height: 100%;
-  width: 2px;
+  width: 1px;
   background: rgb(var(--accent));
   z-index: 1;
 }
@@ -447,6 +485,27 @@ body::before {
   padding: 8px 16px;
   -webkit-backdrop-filter: blur(var(--app-blur));
           backdrop-filter: blur(var(--app-blur));
+}
+
+#app-mount .divider-IqmEqJ {
+  margin: 2rem 0;
+  border: none;
+}
+#app-mount .divider-IqmEqJ::before, #app-mount .divider-IqmEqJ::after {
+  content: "";
+  height: 1px;
+  width: 100%;
+  background: var(--border);
+}
+#app-mount .divider-IqmEqJ.isUnread-3Lojb-::before, #app-mount .divider-IqmEqJ.isUnread-3Lojb-::after {
+  background: var(--status-danger);
+}
+#app-mount .content-3spvdd {
+  padding: 6px 24px;
+  background: var(--fg-main);
+  border: 1px solid var(--border);
+  font-weight: 400;
+  color: var(--text-normal);
 }
 
 #app-mount .menu-1QACrS .scroller-1bVxF5 {
