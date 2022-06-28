@@ -1,12 +1,12 @@
 /** @type {import('bd-scss/lib/config').Config} */
 export default {
 	meta: {
-		name: "Mineral",
+		name: "Crystalline",
 		author: "Gibbu",
 		version: "0.0.1",
 		description: "A beautiful frosted glass theme with support for both dark and light themes.",
-		source: "https://github.com/DiscordStyles/Mineral",
+		source: "https://github.com/DiscordStyles/Crystalline",
 		authorId: '174868361040232448'
 	},
-	baseImport: 'https://discordstyles.github.io/Mineral/Mineral.css'
+	baseImport: 'https://discordstyles.github.io/Crystalline/Crystalline.css'
 }

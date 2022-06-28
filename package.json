@@ -1,5 +1,5 @@
 {
-	"name": "mineral",
+	"name": "crystalline",
 	"version": "1.0.0",
 	"description": "A beautiful frosted glass theme with support for both dark and light themes",
 	"author": "Gibbu",
@@ -9,6 +9,6 @@
 		"build": "bd-scss build"
 	},
 	"dependencies": {
-		"bd-scss": "^2.0.2"
+		"bd-scss": "^2.0.4"
 	}
 }
