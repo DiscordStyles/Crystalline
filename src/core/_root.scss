@@ -2,17 +2,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap');
 
 :root {
-	--app-image: url('https://i.imgur.com/4p8XfVy.jpg');
-	--app-image-blur: 25px;
+	/**
+	 * Background image variables.
+	 */
+	--app-image: url('https://i.imgur.com/4p8XfVy.jpg'); /* The image behind the app | URL MUST BE A DIRECT LINK (ending in .jpg, .jpeg, .png, .gif) */
+	--app-image-blur: 25px; /* Blur intensity of --app-image | Must end in px */
 
-	--accent: 56 189 248;
+	/**
+	 * Accent variables
+	 */
+	--accent: 56 189 248; /* Colour used around the app | Values are in R,G,B format */
 
-	--app-opacity: .85;
-	--grain-opacity: .65;
+	/**
+	 * Opacity variables
+	 */
+	--app-opacity: .85; /* The opacity of the foreground */
+	--grain-opacity: .65; /* The opacity of the film grain of the --app-image */
 
-	--guilds-width: 80px;
-	--sidebar-width: 280px;
-	--members-width: 280px;
+	/**
+	 * Width variables
+	 */
+	--guilds-width: 80px; /* Width for the server list */
+	--sidebar-width: 280px; /* Width channels and dms */
+	--members-width: 280px; /* Width for members lists */
 
+	/**
+	 * Server alignment variables
+	 */
+	--server-alignment: flex-start; /* Alignment of the server list. | OPTIONS: flex-start, center, flex-end */
+
+	/**
+	 * Font variable
+	 */
 	--font: 'Inter';
 }

@@ -4,8 +4,17 @@ html.theme-light .force-theme.theme-light {
 	--border: hsl(0 0% 0% / .175);
 
 	--bg-main: hsl(0 0% 100% / var(--app-opacity));
+	--bg-flyout: hsl(0 0% 100% / .75);
 
 	--fg-main: hsl(0 0% 0% / .085);
 	--fg-hover: hsl(0 0% 0% / .035);
 	--fg-active: hsl(0 0% 0% / .075);
+
+	--shadow-flyout: 0 8px 15px hsl(0 0% 0% / .15);
+
+	--text-normal: #444;
+	--text-muted: #666;
+	--interactive-normal: #444;
+	--interactive-muted: #aaa;
+	--channel-text-area-placeholder: #666;
 }

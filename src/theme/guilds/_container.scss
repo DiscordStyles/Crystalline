@@ -15,7 +15,7 @@
 		margin-top: calc(var(--toolbar-height) + 1px);
 		display: flex;
 		flex-direction: column;
-		justify-content: center;
+		justify-content: var(--server-alignment);
 		overflow: visible !important;
 		&::-webkit-scrollbar {
 			display: none;

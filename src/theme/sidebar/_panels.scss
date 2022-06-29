@@ -7,5 +7,18 @@
 	// User area
 	.container-YkUktl {
 		height: calc(var(--bottom-height) - 1px);
+		padding: 0 0 0 12px;
+		.flex-2S1XBF {
+			height: var(--bottom-height);
+			border-left: 1px solid var(--border);
+		}
+		button {
+			height: 100%;
+			border-radius: 0;
+			width: 38px;
+			&:hover {
+				background: var(--fg-active);
+			}
+		}
 	}
 }

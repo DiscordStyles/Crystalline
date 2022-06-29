@@ -23,5 +23,6 @@ body::before {
 		inset: 0;
 		position: absolute;
 		opacity: var(--grain-opacity);
+		backdrop-filter: opacity(1);
 	}
 }
