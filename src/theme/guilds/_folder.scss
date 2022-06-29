@@ -1,0 +1,31 @@
+#app-mount {
+	.folder-241Joy {
+		background: transparent;
+		border-radius: 50%;
+		&[aria-expanded="true"] {
+			background: var(--fg-main);
+		}
+	}
+	.wrapper-38slSD {
+		width: var(--guilds-width);
+		& > .listItem-3SmSlK .wrapper-28eC3z {
+			margin-bottom: 8px;
+			foreignObject {
+				mask: none;
+			}
+		}
+		[role="group"] {
+			display: flex;
+			flex-direction: column;
+			gap: 8px;
+		}
+	}
+	.expandedFolderBackground-1kSAf6 {
+		left: 50%;
+		transform: translateX(-50%);
+		background: var(--fg-main);
+		&.collapsed-uGXEbi {
+			display: none;
+		}
+	}
+}

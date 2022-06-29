@@ -1,0 +1,49 @@
+@use './paths';
+
+// Icons from:
+// https://heroicons.com/
+// https://primer.style/octicons
+
+$svg: 'data:image/svg+xml; utf-8,';
+
+$cog: $svg+'<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="#{paths.$cog-1}" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="#{paths.$cog-2}" /></svg>';
+
+$paper-clip: $svg+'<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="#{paths.$paper-clip}" /></svg>';
+
+$emoji-smile: $svg+'<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="#{paths.$emoji-smile}" /></svg>';
+
+$sparkles: $svg+'<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="#{paths.$sparkles}" /></svg>';
+
+$photograph: $svg+'<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="#{paths.$photograph}" /></svg>';
+
+$gift: $svg+'<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="#{paths.$gift}" /></svg>';
+
+$bell: $svg+'<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="#{paths.$bell}" /></svg>';
+
+$pin: $svg+'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" ><path fill-rule="evenodd" d="#{paths.$pin}"></path></svg>';
+
+$users: $svg+'<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="#{paths.$users}" /></svg>';
+
+$inbox: $svg+'<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="#{paths.$inbox}" /></svg>';
+
+$chat-alt-2: $svg+'<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="#{paths.$chat-alt-2}" /></svg>';
+
+$information-circle: $svg+'<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="#{paths.$information-circle}" /></svg>';
+
+$rss: $svg+'<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="#{paths.$rss}" /></svg>';
+
+$server: $svg+'<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="#{paths.$server}" /></svg>';
+
+$check-circle: $svg+'<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="#{paths.$check-circle}" /></svg>';
+
+$information-circle: $svg+'<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="#{paths.$information-circle}" /></svg>';
+
+$x-circle: $svg+'<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="#{paths.$x-circle}" /></svg>';
+
+$search: $svg+'<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="#{paths.$search}" /></svg>';
+
+$tag: $svg+'<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="#{paths.$tag}" /></svg>';
+
+$user-remove: $svg+'<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="#{paths.$user-remove}" /></svg>';
+
+$triangle-right: $svg+'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="#{paths.$triangle-right}"></path></svg>';
