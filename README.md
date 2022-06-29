@@ -2,8 +2,8 @@
 
 A beautiful frosted glass theme with support for both dark and light themes.
 
-![Dark Theme](https://i.imgur.com/3Z2Kozx.jpeg)
-![Light Theme](https://i.imgur.com/PYrEpSj.jpeg)
+![Dark Theme](https://i.imgur.com/yLuoJGA.jpeg)
+![Light Theme](https://i.imgur.com/MtTIGeI.jpeg)
 
 ## Download
 
