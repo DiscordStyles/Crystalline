@@ -1,7 +1,7 @@
 /**
  * @name Crystalline
  * @author Gibbu
- * @version 0.0.4
+ * @version 0.0.5
  * @description A beautiful frosted glass theme with support for both dark and light themes.
  * @source https://github.com/DiscordStyles/Crystalline
  * @authorId 174868361040232448
@@ -13,14 +13,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap");
 :root {
   /**
-   * Background image variables.
+   * Background image variables
+   * URL MUST BE A DIRECT IMAGE LINK (Ending in .jpg, .jpeg, .png, .gif)
    */
-  --app-image: url("https://i.imgur.com/4p8XfVy.jpg"); /* The image behind the app | URL MUST BE A DIRECT LINK (ending in .jpg, .jpeg, .png, .gif) */
+  --app-image-dark: url("https://i.imgur.com/iwsTO4e.jpg"); /* The image used for Dark Mode */
+  --app-image-light: url("https://i.imgur.com/i0LtTx1.jpg"); /* The image used for Light Mode */
+  /*
+   * Background image modifier variables
+   */
   --app-image-blur: 25px; /* Blur intensity of --app-image | Must end in px */
   /**
    * Accent variables
    */
-  --accent: 56 189 248; /* Colour used around the app | Values are in R,G,B format */
+  --accent: 203 78 205; /* Colour used around the app | Values are in R G B format */
   /**
    * Opacity variables
    */
@@ -35,7 +40,7 @@
   /**
    * Server alignment variables
    */
-  --server-alignment: flex-start; /* Alignment of the server list. | OPTIONS: flex-start, center, flex-end */
+  --server-alignment: center; /* Alignment of the server list. | OPTIONS: flex-start, center, flex-end */
   /**
    * Font variable
    */
