@@ -12,7 +12,25 @@
 		}
 		&.selected-3veCBZ {
 			background: var(--fg-active);
-			box-shadow: inset 1px 0 0 rgb(var(--accent));
+			.layout-1LjVue {
+				&::before {
+					content: '';
+					position: absolute;
+					height: 100%;
+					width: 1px;
+					background: rgb(var(--accent));
+					left: 0;
+				}
+				&::after {
+					content: '';
+					position: absolute;
+					left: 0;
+					height: 100%;
+					width: 1px;
+					box-shadow: 0 0 15px 2px rgb(var(--accent));
+					opacity: .75;
+				}
+			}
 		}
 	}
 }

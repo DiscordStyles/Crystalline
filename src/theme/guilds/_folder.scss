@@ -8,11 +8,8 @@
 	}
 	.wrapper-38slSD {
 		width: var(--guilds-width);
-		& > .listItem-3SmSlK .wrapper-28eC3z {
-			margin-bottom: 8px;
-			foreignObject {
-				mask: none;
-			}
+		& > .listItem-3SmSlK .wrapper-28eC3z foreignObject {
+			mask: none;
 		}
 		[role="group"] {
 			display: flex;
@@ -26,6 +23,9 @@
 		background: var(--fg-main);
 		&.collapsed-uGXEbi {
 			display: none;
+		}
+		&:not(.collapsed-uGXEbi) + .listItem-3SmSlK .wrapper-28eC3z {
+			margin-bottom: 8px;
 		}
 	}
 }

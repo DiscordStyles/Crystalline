@@ -1,6 +1,14 @@
 #app-mount {
-	.message-2CShn3.selected-2LX7Jy {
-		background: var(--fg-hover);
+	.message-2CShn3 {
+		&.replying-eZ7p5z {
+			background: rgb(var(--accent) / .075);
+			&::before {
+				background: rgb(var(--accent));
+			}
+		}
+		&.selected-2LX7Jy {
+			background: var(--fg-hover);
+		}
 	}
 
 	.markup-eYLPri {
@@ -25,6 +33,6 @@
 	}
 }
 
-.mouse-mode.full-motion .message-2CShn3:hover {
+.mouse-mode.full-motion .message-2CShn3:not(.mentioned-Tre-dv):hover {
 	background: var(--fg-hover);
 }

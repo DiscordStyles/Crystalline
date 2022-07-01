@@ -1,10 +1,27 @@
 #app-mount {
-	.listItem-3SmSlK {
-		margin: 0;
+	.guilds-2JjMmN {
+		.pill-2RsI5Q {
+			overflow: visible;
+		}
 		.item-2LIpTv {
 			margin-left: 0;
 			width: 1px;
 			border-radius: 0;
+			box-shadow: 0 0 10px 1px var(--interactive-active);
 		}
+	}
+	
+	.listItem-3SmSlK {
+		margin: 0;
+	}
+
+	.tutorialContainer-1pL9QS + div[style] {
+		padding: 16px 0;
+	}
+	.guildSeparator-a4uisj {
+		width: var(--guilds-width);
+		border-radius: 0;
+		background: var(--border);
+		height: 1px;
 	}
 }
