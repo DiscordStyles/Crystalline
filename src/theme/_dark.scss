@@ -5,6 +5,8 @@ html.theme-dark .theme-light {
 
 	--bg-main: hsl(0 0% 0% / var(--app-opacity));
 	--bg-flyout: hsl(0 0% 0% / .65);
+	--bg-input: hsl(0 0% 100% / .075);
+	--bg-input-focus: hsl(0 0% 100% / .1);
 
 	--fg-main: hsl(0 0% 100% / .085);
 	--fg-hover: hsl(0 0% 100% / .035);

@@ -46,4 +46,18 @@
 		border-radius: 0;
 		position: relative;
 	}
+
+	.typing-2J1mQU {
+		left: 0;
+		right: 0;
+		padding: 0 16px;
+		top: 0;
+		border-top: 1px solid var(--border);
+		background: var(--fg-main);
+		top: -25px;
+		backdrop-filter: blur(var(--app-blur));
+	}
+	.ellipsis-1e7x0D {
+		margin-left: 0;
+	}
 }

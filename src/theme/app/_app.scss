@@ -27,7 +27,7 @@ body::before {
 
 	.bg-1QIAus {
 		background-image: var(--grain);
-		background-size: var(--grain-size, 100px);
+		background-size: var(--grain-size, 250px);
 		mix-blend-mode: overlay;
 		inset: 0;
 		position: absolute;

@@ -1,0 +1,13 @@
+#app-mount {
+	.tooltip-14MtrL {
+		backdrop-filter: blur(var(--app-blur));
+		border-radius: var(--radius);
+	}
+	.tooltipPrimary-3qLMbS {
+		background: var(--bg-flyout);
+		border: 1px solid var(--border);
+		.tooltipPointer-3L49xb {
+			border-top-color: var(--border);
+		}
+	}
+}

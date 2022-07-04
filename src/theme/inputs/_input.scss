@@ -1,0 +1,32 @@
+#app-mount {
+	.input-2g-os5:not(.multiInput-1VARjC):not(.multiInputField-1zyopx),
+	.input-2g-os5.multiInput-1VARjC {
+		border: 1px solid var(--border);
+		background: var(--bg-input);
+		border-radius: var(--radius);
+		transition-property: background-colour, border-color;
+		color: var(--text-normal);
+		padding: 4px 8px;
+		height: auto !important;
+		&:hover {
+			border-color: rgb(var(--accent));
+		}
+		&:focus-within {
+			border-color: rgb(var(--accent));
+			background: var(--bg-input-focus);
+		}
+	}
+	.multiInputLast-35zVz0::before {
+		content: none;
+	}
+
+	// Icon prefix
+	.inputWrapper-BB4B- .inputPrefix-1HHwWv {
+		top: 14px;
+		left: 12px;
+		pointer-events: none;
+		& + .input-2g-os5:not(.multiInput-1VARjC):not(.multiInputField-1zyopx) {
+			padding-left: 38px;
+		}
+	}
+}

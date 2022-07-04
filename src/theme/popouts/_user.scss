@@ -5,11 +5,36 @@
 	border-radius: var(--radius);
 	backdrop-filter: blur(var(--app-blur));
 
+	.body-2wLx-E {
+		padding: 0 16px 16px !important;
+	}
 	.bodyInnerWrapper-2bQs1k {
 		background: transparent;
 	}
 
+	.divider-1wtgZ3 {
+		background: var(--border);
+	}
+
+	.root-jbEB5E {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 8px;
+	}
+	.role-2TIOKu {
+		margin: 0;
+	}
+
 	.footer-3naVBw {
 		background: transparent;
+	}
+	.note-Go5ZP2 {
+		margin: 0;
+	}
+	.textarea-_59yqs {
+		background: var(--bg-input);
+		&:focus {
+			background: var(--bg-input-focus);
+		}
 	}
 }

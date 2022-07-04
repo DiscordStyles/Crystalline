@@ -4,6 +4,42 @@
 		border-top: 1px solid var(--border);
 	}
 
+	// Connected voice
+	.container-1zzFcN {
+		padding: 0;
+		& > .flex-2S1XBF {
+			padding: 0;
+			gap: 8px;
+			& > .inner-llGtyq {
+				padding: 8px;
+			}
+			& > .flex-2S1XBF {
+				margin: 0;
+				button {
+					height: 47px;
+					width: 42px;
+					border-radius: 0;
+					&:hover {
+						background: var(--fg-active);
+					}
+				}
+			}
+		}
+	}
+	.actionButtons-2vEOUh {
+		gap: 0;
+		padding: 0;
+		border-top: 1px solid var(--border);
+		button {
+			border-radius: 0;
+			background: transparent;
+			height: 42px;
+			&:hover {
+				background: var(--fg-active);
+			}
+		}
+	}
+
 	// User area
 	.container-YkUktl {
 		height: calc(var(--bottom-height) - 1px);

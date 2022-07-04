@@ -5,7 +5,7 @@
 		}
 		.item-2LIpTv {
 			margin-left: 0;
-			width: 1px;
+			width: 2px;
 			border-radius: 0;
 			box-shadow: 0 0 10px 1px var(--interactive-active);
 		}
@@ -15,8 +15,16 @@
 		margin: 0;
 	}
 
-	.tutorialContainer-1pL9QS + div[style] {
-		padding: 16px 0;
+	.tutorialContainer-1pL9QS {
+		.pill-L_aLMQ {
+			top: 50%;
+			transform: translateY(-50%);
+		}
+
+		& + div[style] {
+			padding: 16px 0;
+			height: auto !important;
+		}
 	}
 	.guildSeparator-a4uisj {
 		width: var(--guilds-width);

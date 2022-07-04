@@ -3,6 +3,17 @@
 		box-shadow: none;
 		border-bottom: 1px solid var(--border);
 		height: var(--toolbar-height);
+		display: flex;
+		align-items: center;
+		&:hover {
+			background: var(--fg-hover);
+		}
+	}
+	.selected-1GtAC5 .header-3OsQeK {
+		background: var(--fg-active);
+	}
+	.headerContent-2SNbie {
+		flex: 1;
 	}
 
 	.bannerImage-ubW8K- {
