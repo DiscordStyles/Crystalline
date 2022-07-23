@@ -308,6 +308,7 @@ body::before {
   border-right: 1px solid var(--border);
   border-left: 1px solid var(--border);
   border-radius: 0;
+  overflow: visible;
 }
 #app-mount .container-1NXEtd,
 #app-mount .privateChannels-oVe7HL {
@@ -321,6 +322,7 @@ body::before {
 #app-mount .panels-3wFtMD {
   background: transparent;
   border-top: 1px solid var(--border);
+  position: relative;
 }
 #app-mount .container-1zzFcN {
   padding: 0;
@@ -357,17 +359,31 @@ body::before {
   background: var(--fg-active);
 }
 #app-mount .container-YkUktl {
+  flex-direction: column;
   height: calc(var(--bottom-height) - 1px);
-  padding: 0 0 0 12px;
+  padding: 0;
 }
 #app-mount .container-YkUktl .flex-2S1XBF {
+  width: 100%;
+}
+#app-mount .container-YkUktl .avatarWrapper-1B9FTW {
+  position: absolute;
+  right: calc(var(--bottom-height) / -1);
+  margin: 0;
   height: var(--bottom-height);
-  border-left: 1px solid var(--border);
+  width: var(--bottom-height);
+  border-right: 1px solid var(--border);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#app-mount .container-YkUktl .nameTag-sc-gpq {
+  display: none;
 }
 #app-mount .container-YkUktl button {
-  height: 100%;
+  height: var(--bottom-height);
   border-radius: 0;
-  width: 38px;
+  width: 100%;
 }
 #app-mount .container-YkUktl button:hover {
   background: var(--fg-active);
@@ -661,6 +677,7 @@ body::before {
 }
 #app-mount .textArea-2CLwUE {
   height: var(--bottom-height);
+  margin-left: 64px;
 }
 #app-mount .placeholder-1rCBhr,
 #app-mount .slateTextArea-27tjG0 {
@@ -672,9 +689,15 @@ body::before {
   width: 100%;
   flex-direction: column;
 }
+#app-mount .attachWrapper-3slhXI {
+  position: absolute;
+  right: 0;
+  z-index: 1;
+}
 #app-mount .attachButton-_ACFSu {
   height: var(--bottom-height);
   box-sizing: border-box;
+  padding: 0 8px;
 }
 #app-mount .attachButton-_ACFSu svg {
   -webkit-mask: url('data:image/svg+xml; utf-8,<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.172 7l-6.586 6.586a2 2 0 102.828 2.828l6.414-6.586a4 4 0 00-5.656-5.656l-6.415 6.585a6 6 0 108.486 8.486L20.5 13" /></svg>') center/cover;
@@ -691,6 +714,7 @@ body::before {
 }
 #app-mount .buttons-uaqb-5 {
   height: var(--bottom-height);
+  padding-right: 46px;
 }
 #app-mount .buttons-uaqb-5 .buttonWrapper-3YFQGJ {
   display: flex;
@@ -949,27 +973,64 @@ body::before {
           backdrop-filter: blur(var(--app-blur));
 }
 #app-mount .userPopout-2j1gM4 .body-2wLx-E {
-  padding: 0 16px 16px !important;
+  padding: 0 !important;
+}
+#app-mount .userPopout-2j1gM4 .body-2wLx-E.scrollerSeparator-CHLxyV {
+  border-bottom: 1px solid var(--border);
 }
 #app-mount .userPopout-2j1gM4 .bodyInnerWrapper-2bQs1k {
   background: transparent;
 }
+#app-mount .userPopout-2j1gM4 .bodyInnerWrapper-2bQs1k > h3 {
+  padding: 16px 16px 0;
+  margin-bottom: 16px;
+}
+#app-mount .userPopout-2j1gM4 .bodyInnerWrapper-2bQs1k > h3:not(:first-child) {
+  border-top: 1px solid var(--border);
+}
+#app-mount .userPopout-2j1gM4 .headerContainer-1wJjOa {
+  padding: 0 16px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+}
+#app-mount .userPopout-2j1gM4 .userInfoSection-3her-v,
+#app-mount .userPopout-2j1gM4 .customStatus-3XAoF9 {
+  padding: 0 16px;
+}
 #app-mount .userPopout-2j1gM4 .divider-1wtgZ3 {
   background: var(--border);
+}
+#app-mount .userPopout-2j1gM4 .bodyAlignCenter-3E27PU {
+  padding: 0 16px;
 }
 #app-mount .userPopout-2j1gM4 .root-jbEB5E {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
+  padding: 0 16px;
 }
 #app-mount .userPopout-2j1gM4 .role-2TIOKu {
+  margin: 0;
+  border-radius: 50px;
+  height: auto;
+  padding: 6px 8px;
+  gap: 6px;
+  background: var(--fg-main);
+  border: 1px solid;
+}
+#app-mount .userPopout-2j1gM4 .roleCircle-3K9O3d {
+  margin: 0;
+}
+#app-mount .userPopout-2j1gM4 .roleName-2ZJJYR {
   margin: 0;
 }
 #app-mount .userPopout-2j1gM4 .footer-3naVBw {
   background: transparent;
+  padding: 0 16px 16px;
 }
 #app-mount .userPopout-2j1gM4 .note-Go5ZP2 {
   margin: 0;
+  padding: 0 16px 16px;
 }
 #app-mount .userPopout-2j1gM4 .textarea-_59yqs {
   background: var(--bg-input);
@@ -986,11 +1047,11 @@ body::before {
   border-left: 1px solid var(--border);
   width: var(--members-width);
 }
+#app-mount .members-3WRCEx .content-2a4AW9 {
+  height: 100% !important;
+}
 #app-mount .members-3WRCEx > div {
   background: transparent;
-}
-#app-mount .content-2a4AW9 {
-  height: 100% !important;
 }
 
 #app-mount .member-2gU6Ar {
