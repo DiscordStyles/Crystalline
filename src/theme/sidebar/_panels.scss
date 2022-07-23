@@ -2,6 +2,7 @@
 	.panels-3wFtMD {
 		background: transparent;
 		border-top: 1px solid var(--border);
+		position: relative;
 	}
 
 	// Connected voice
@@ -42,16 +43,30 @@
 
 	// User area
 	.container-YkUktl {
+		flex-direction: column;
 		height: calc(var(--bottom-height) - 1px);
-		padding: 0 0 0 12px;
+		padding: 0;
 		.flex-2S1XBF {
+			width: 100%;
+		}
+		.avatarWrapper-1B9FTW {
+			position: absolute;
+			right: calc(var(--bottom-height) / -1);
+			margin: 0;
 			height: var(--bottom-height);
-			border-left: 1px solid var(--border);
+			width: var(--bottom-height);
+			border-right: 1px solid var(--border);
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.nameTag-sc-gpq {
+			display: none;
 		}
 		button {
-			height: 100%;
+			height: var(--bottom-height);
 			border-radius: 0;
-			width: 38px;
+			width: 100%;
 			&:hover {
 				background: var(--fg-active);
 			}

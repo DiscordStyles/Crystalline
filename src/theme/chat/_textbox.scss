@@ -23,6 +23,7 @@
 	}
 	.textArea-2CLwUE {
 		height: var(--bottom-height);
+		margin-left: 64px;
 	}
 	.placeholder-1rCBhr,
 	.slateTextArea-27tjG0 {
@@ -35,9 +36,15 @@
 		flex-direction: column;
 	}
 
+	.attachWrapper-3slhXI {
+		position: absolute;
+		right: 0;
+		z-index: 1;
+	}
 	.attachButton-_ACFSu {
 		height: var(--bottom-height);
 		box-sizing: border-box;
+		padding: 0 8px;
 		svg {
 			mask: url(icons.$paper-clip) center/cover;
 			background: var(--interactive-muted);
@@ -54,6 +61,7 @@
 
 	.buttons-uaqb-5 {
 		height: var(--bottom-height);
+		padding-right: 46px;
 
 		.buttonWrapper-3YFQGJ {
 			display: flex;

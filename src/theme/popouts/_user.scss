@@ -6,30 +6,70 @@
 	backdrop-filter: blur(var(--app-blur));
 
 	.body-2wLx-E {
-		padding: 0 16px 16px !important;
+		padding: 0 !important;
+		&.scrollerSeparator-CHLxyV {
+			border-bottom: 1px solid var(--border);
+		}
 	}
 	.bodyInnerWrapper-2bQs1k {
 		background: transparent;
+		& > h3 {
+			padding: 16px 16px 0;
+			margin-bottom: 16px;
+			&:not(:first-child) {
+				border-top: 1px solid var(--border);
+			}
+		}
+	}
+
+	.headerContainer-1wJjOa {
+		padding: 0 16px;
+		margin-bottom: 16px;
+		box-sizing: border-box;
+	}
+
+	.userInfoSection-3her-v,
+	.customStatus-3XAoF9 {
+		padding: 0 16px;
 	}
 
 	.divider-1wtgZ3 {
 		background: var(--border);
 	}
 
+	.bodyAlignCenter-3E27PU {
+		padding: 0 16px;
+	}
+
 	.root-jbEB5E {
 		display: flex;
 		flex-wrap: wrap;
 		gap: 8px;
+		padding: 0 16px;
 	}
 	.role-2TIOKu {
+		margin: 0;
+		border-radius: 50px;
+		height: auto;
+		padding: 6px 8px;
+		gap: 6px;
+		background: var(--fg-main);
+		border: 1px solid;
+	}
+	.roleCircle-3K9O3d {
+		margin: 0;
+	}
+	.roleName-2ZJJYR {
 		margin: 0;
 	}
 
 	.footer-3naVBw {
 		background: transparent;
+		padding: 0 16px 16px;
 	}
 	.note-Go5ZP2 {
 		margin: 0;
+		padding: 0 16px 16px;
 	}
 	.textarea-_59yqs {
 		background: var(--bg-input);
