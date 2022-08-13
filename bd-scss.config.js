@@ -3,7 +3,7 @@ export default {
 	meta: {
 		name: "Crystalline",
 		author: "Gibbu",
-		version: "0.0.6",
+		version: "0.0.8",
 		description: "A beautiful frosted glass theme with support for both dark and light themes.",
 		source: "https://github.com/DiscordStyles/Crystalline",
 		authorId: '174868361040232448'

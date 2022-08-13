@@ -5,6 +5,19 @@
 	border-radius: var(--radius);
 	backdrop-filter: blur(var(--app-blur));
 
+	.banner-1YaD3N {
+		position: absolute;
+		z-index: -1;
+		width: 100%;
+		mask: linear-gradient(black, transparent);
+		opacity: .75;
+		height: 120px;
+	}
+
+	.avatarWrapper-eenWra {
+		top: 64px;
+	}
+
 	.body-2wLx-E {
 		padding: 0 !important;
 		&.scrollerSeparator-CHLxyV {
@@ -27,6 +40,9 @@
 		margin-bottom: 16px;
 		box-sizing: border-box;
 	}
+	.headerTop-3GPUSF {
+		padding-top: 172px;
+	}
 
 	.userInfoSection-3her-v,
 	.customStatus-3XAoF9 {
@@ -34,7 +50,7 @@
 	}
 
 	.divider-1wtgZ3 {
-		background: var(--border);
+		display: none;
 	}
 
 	.bodyAlignCenter-3E27PU {
