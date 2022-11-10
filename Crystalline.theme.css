@@ -1,8 +1,8 @@
 /**
  * @name Crystalline
  * @author Gibbu
- * @version 0.0.8
- * @description A beautiful frosted glass theme with support for both dark and light themes.
+ * @version 0.0.9
+ * @description A beautiful and uniform frosted glass theme with support for both dark and light themes.
  * @source https://github.com/DiscordStyles/Crystalline
  * @authorId 174868361040232448
 */
@@ -29,8 +29,8 @@
   /**
    * Opacity variables
    */
-  --app-opacity: .85; /* The opacity of the foreground */
-  --grain-opacity: .5; /* The opacity of the film grain of the --app-image */
+  --app-opacity: 0.85; /* The opacity of the foreground */
+  --grain-opacity: 0.5; /* The opacity of the film grain of the --app-image */
   /**
    * Width variables
    */
