@@ -1,38 +1,39 @@
-#app-mount {
-	.message-2CShn3 {
-		&.replying-eZ7p5z {
-			background: rgb(var(--accent) / .075);
+@use '../classes' as *;
+
+#{cls('mount')} {
+	#{cls('chat.message.container')} {
+		&#{cls('chat.message.replying')} {
+			background: rgb(var(--accent) / 0.075);
 			&::before {
 				background: rgb(var(--accent));
 			}
 		}
-		&.selected-2LX7Jy {
+		&#{cls('chat.message.selected')} {
 			background: var(--fg-hover);
 		}
 	}
 
-	.markup-eYLPri {
-		code {
-			background: var(--fg-main);
-			border-color: var(--border);
-		}
+	#{cls('chat.message.markup')} code {
+		background: var(--fg-main);
+		border-color: var(--border);
 	}
-	.embedMedia-1mdWSP:not(.imageContent-3Av-9c) {
+	#{cls('chat.codeContent.container')} {
 		background: var(--fg-main);
 		border: 1px solid var(--border);
 		border-radius: var(--radius);
 		overflow: hidden;
-		.textContainer-36wgKK {
+		#{cls('chat.codeContent.code')} {
 			background: transparent;
 			border: none;
 		}
-		.footer-GXWBBp {
+		#{cls('chat.codeContent.footer.container')} {
 			background: transparent;
 			border-top: 1px solid var(--border);
 		}
 	}
 }
 
-.mouse-mode.full-motion .message-2CShn3:not(.mentioned-Tre-dv):hover {
+#{cls('common.mode.mouse+common.motion.full chat.message.container!chat.message.mentioned')}:hover {
 	background: var(--fg-hover);
+	transition: var(--message-highlight-duration) ease background;
 }

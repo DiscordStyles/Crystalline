@@ -1,96 +1,77 @@
-#app-mount .userPopout-2j1gM4 {
-	border: 1px solid var(--border);
-	background: var(--bg-flyout);
-	box-shadow: var(--shadow-flyout);
-	border-radius: var(--radius);
-	backdrop-filter: blur(var(--app-blur));
+@use '../classes' as *;
 
-	.banner-1YaD3N {
-		position: absolute;
-		z-index: -1;
-		width: 100%;
-		mask: linear-gradient(black, transparent);
-		opacity: .75;
-		height: 120px;
-	}
+#{cls('mount')} {
+	#{cls('popout.user.outer')} {
+		border: 1px solid var(--border);
+		background: var(--bg-flyout);
+		box-shadow: var(--shadow-flyout);
+		border-radius: var(--radius);
+		backdrop-filter: blur(var(--app-blur));
+		padding: 0;
 
-	.avatarWrapper-eenWra {
-		top: 64px;
-	}
+		#{cls('roles.root')} {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 8px;
+		}
+		#{cls('roles.role')} {
+			margin: 0;
+			border-radius: 50px;
+			height: auto;
+			padding: 6px 8px;
+			gap: 6px;
+			background: var(--fg-main);
+			border: none;
+		}
+		#{cls('roles.circle')},
+		#{cls('roles.name')} {
+			margin: 0;
+		}
 
-	.body-2wLx-E {
-		padding: 0 !important;
-		&.scrollerSeparator-CHLxyV {
-			border-bottom: 1px solid var(--border);
+		&.theme-light {
+			--border: hsl(0 0% 0% / 0.175) !important;
 		}
 	}
-	.bodyInnerWrapper-2bQs1k {
+	#{cls('popout.user.inner')} {
+		&::before {
+			width: 100%;
+			height: 100%;
+		}
+	}
+	#{cls('popout.user.innerWithBanner popout.user.avatarWrapper')} {
+		top: 72px;
+		left: 18px;
+	}
+	#{cls('popout.user.innerWithoutBanner popout.user.avatarWrapper')} {
+		top: 42px;
+		left: 18px;
+	}
+	#{cls('popout.user.inner!popout.user.innerNonPremium popout.user.overlay')} {
+		border: 1px solid var(--border);
+		& > #{cls('popout.user.section')}:first-child {
+			padding-bottom: 0;
+		}
+	}
+
+	#{cls('popout.user.innerNonPremium')} {
 		background: transparent;
-		& > h3 {
-			padding: 16px 16px 0;
-			margin-bottom: 16px;
-			&:not(:first-child) {
-				border-top: 1px solid var(--border);
-			}
+		#{cls('popout.user.overlay')} {
+			margin: 8px 0 0;
+			padding: 0;
+			background: transparent;
 		}
 	}
-
-	.headerContainer-1wJjOa {
-		padding: 0 16px;
-		margin-bottom: 16px;
-		box-sizing: border-box;
+	#{cls('popout.user.section')} {
+		padding: 16px;
 	}
-	.headerTop-3GPUSF {
-		padding-top: 172px;
+	#{cls('popout.user.scroller')} > #{cls('popout.user.section')} {
+		border-top: 1px solid var(--border);
 	}
-
-	.userInfoSection-3her-v,
-	.customStatus-3XAoF9 {
-		padding: 0 16px;
-	}
-
-	.divider-1wtgZ3 {
+	#{cls('popout.user.divider')} {
 		display: none;
 	}
-
-	.bodyAlignCenter-3E27PU {
-		padding: 0 16px;
-	}
-
-	.root-jbEB5E {
-		display: flex;
-		flex-wrap: wrap;
-		gap: 8px;
-		padding: 0 16px;
-	}
-	.role-2TIOKu {
-		margin: 0;
-		border-radius: 50px;
-		height: auto;
-		padding: 6px 8px;
-		gap: 6px;
-		background: var(--fg-main);
-		border: 1px solid;
-	}
-	.roleCircle-3K9O3d {
-		margin: 0;
-	}
-	.roleName-2ZJJYR {
-		margin: 0;
-	}
-
-	.footer-3naVBw {
-		background: transparent;
-		padding: 0 16px 16px;
-	}
-	.note-Go5ZP2 {
-		margin: 0;
-		padding: 0 16px 16px;
-	}
-	.textarea-_59yqs {
-		background: var(--bg-input);
-		&:focus {
-			background: var(--bg-input-focus);
-		}
+	#{cls('popout.user.messageContainer')} {
+		border: none;
+		border-radius: 0;
 	}
 }

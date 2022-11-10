@@ -1,20 +1,24 @@
-#app-mount {
-	.divider-IqmEqJ {
+@use '../classes' as *;
+
+#{cls('mount')} {
+	#{cls('chat.divider.container')} {
 		margin: 2rem 0;
 		border: none;
-		&::before, &::after {
+		&::before,
+		&::after {
 			content: '';
 			height: 1px;
 			width: 100%;
 			background: var(--border);
 		}
-		&.isUnread-3Lojb- {
-			&::before, &::after {
+		&#{cls('chat.divider.unread')} {
+			&::before,
+			&::after {
 				background: var(--status-danger);
 			}
 		}
 	}
-	.content-3spvdd {
+	#{cls('chat.divider.content')} {
 		padding: 6px 24px;
 		background: var(--fg-main);
 		border: 1px solid var(--border);

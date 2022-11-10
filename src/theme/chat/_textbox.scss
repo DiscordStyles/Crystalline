@@ -1,7 +1,8 @@
 @use '../assets/icons';
+@use '../classes' as *;
 
-#app-mount {
-	.form-3gdLxP {
+#{cls('mount')} {
+	#{cls('chat.textbox.container')} {
 		margin: 0;
 		padding: 0;
 		overflow: visible;
@@ -10,23 +11,23 @@
 		}
 	}
 
-	.channelTextArea-1FufC0 {
+	#{cls('chat.textbox.channelTextarea')} {
 		margin: 0;
 		background: transparent;
 		border-radius: 0;
 	}
-	.scrollableContainer-15eg7h {
+	#{cls('chat.textbox.scroller')} {
 		background: transparent;
 		min-height: var(--bottom-height);
 		border-top: 1px solid var(--border);
 		border-radius: 0;
 	}
-	.textArea-2CLwUE {
+	#{cls('chat.textbox.textarea')} {
 		height: var(--bottom-height);
 		margin-left: 64px;
 	}
-	.placeholder-1rCBhr,
-	.slateTextArea-27tjG0 {
+	#{cls('chat.textbox.placeholder')},
+	#{cls('chat.textbox.slate')} {
 		min-height: var(--bottom-height);
 		box-sizing: border-box;
 		display: flex;
@@ -36,12 +37,12 @@
 		flex-direction: column;
 	}
 
-	.attachWrapper-3slhXI {
+	#{cls('chat.textbox.attach.wrapper')} {
 		position: absolute;
 		right: 0;
 		z-index: 1;
 	}
-	.attachButton-_ACFSu {
+	#{cls('chat.textbox.attach.button')} {
 		height: var(--bottom-height);
 		box-sizing: border-box;
 		padding: 0 8px;
@@ -59,11 +60,11 @@
 		}
 	}
 
-	.buttons-uaqb-5 {
+	#{cls('chat.textbox.buttons.container')} {
 		height: var(--bottom-height);
 		padding-right: 46px;
 
-		.buttonWrapper-3YFQGJ {
+		#{cls('chat.textbox.buttons.wrapper')} {
 			display: flex;
 		}
 
@@ -81,7 +82,7 @@
 				background: var(--interactive-normal);
 			}
 		}
-		.button-f2h6uQ {
+		#{cls('chat.textbox.buttons.button')} {
 			height: 100%;
 			// Gif Button
 			#icon {
@@ -98,7 +99,7 @@
 			&:hover #icon svg {
 				background: var(--interactive-normal);
 			}
-			&:not(.attachButton-_ACFSu) {
+			&#{cls('!chat.textbox.attach.button')} {
 				svg {
 					transition: var(--transition);
 					transition-property: filter;
@@ -108,10 +109,10 @@
 				}
 			}
 		}
-		.emojiButton-1fMsf3 {
+		#{cls('chat.textbox.buttons.emoji')} {
 			padding: 0 4px;
 			max-height: var(--bottom-height);
-			.sprite-2lxwfc {
+			#{cls('chat.textbox.buttons.sprite')} {
 				width: 24px;
 				height: 24px;
 				mask: url(icons.$emoji-smile) center/cover;
@@ -121,11 +122,11 @@
 				transition: var(--transition);
 				transition-property: background;
 			}
-			&:hover .sprite-2lxwfc {
+			&:hover #{cls('chat.textbox.buttons.sprite')} {
 				background: var(--interactive-normal);
 			}
 		}
-		.stickerButton-1-nFh2 {
+		#{cls('chat.textbox.buttons.sticker')} {
 			padding: 0;
 			svg {
 				width: 24px !important;
@@ -143,5 +144,4 @@
 			}
 		}
 	}
-
 }

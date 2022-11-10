@@ -1,6 +1,8 @@
-#app-mount {
-	.input-2g-os5:not(.multiInput-1VARjC):not(.multiInputField-1zyopx),
-	.input-2g-os5.multiInput-1VARjC {
+@use '../classes' as *;
+
+#{cls('mount')} {
+	#{cls('input.container!input.multiInput,input.multiField')},
+	#{cls('input.container+input.multiInput')} {
 		border: 1px solid var(--border);
 		background: var(--bg-input);
 		border-radius: var(--radius);
@@ -16,16 +18,16 @@
 			background: var(--bg-input-focus);
 		}
 	}
-	.multiInputLast-35zVz0::before {
+	#{cls('input.multiInputLast')}::before {
 		content: none;
 	}
 
 	// Icon prefix
-	.inputWrapper-BB4B- .inputPrefix-1HHwWv {
+	#{cls('input.wrapper')} #{cls('input.iconPrefix')} {
 		top: 14px;
 		left: 12px;
 		pointer-events: none;
-		& + .input-2g-os5:not(.multiInput-1VARjC):not(.multiInputField-1zyopx) {
+		& + #{cls('input.container!input.multiInput,input.multiField')} {
 			padding-left: 38px;
 		}
 	}

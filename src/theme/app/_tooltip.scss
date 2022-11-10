@@ -1,12 +1,14 @@
+@use '../classes' as *;
+
 #app-mount {
-	.tooltip-14MtrL {
+	#{cls('tooltip.container')} {
 		backdrop-filter: blur(var(--app-blur));
 		border-radius: var(--radius);
 	}
-	.tooltipPrimary-3qLMbS {
+	#{cls('tooltip.primary')} {
 		background: var(--bg-flyout);
 		border: 1px solid var(--border);
-		.tooltipPointer-3L49xb {
+		#{cls('tooltip.pointer')} {
 			border-top-color: var(--border);
 		}
 	}

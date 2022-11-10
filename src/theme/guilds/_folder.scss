@@ -1,30 +1,33 @@
-#app-mount {
-	.folder-241Joy {
+@use '../classes' as *;
+
+#{cls('mount')} {
+	#{cls('guilds.folder.container')} {
 		background: transparent;
 		border-radius: 50%;
-		&[aria-expanded="true"] {
+		&[aria-expanded='true'] {
 			background: var(--fg-main);
 		}
 	}
-	.wrapper-38slSD {
+	#{cls('guilds.folder.wrapper')} {
 		width: var(--guilds-width);
-		& > .listItem-3SmSlK .wrapper-28eC3z foreignObject {
+		& > #{cls('guilds.list.item')} #{cls('guilds.list.server')} foreignObject {
 			mask: none;
 		}
-		[role="group"] {
+		[role='group'] {
 			display: flex;
 			flex-direction: column;
 			gap: 8px;
 		}
 	}
-	.expandedFolderBackground-1kSAf6 {
+	#{cls('guilds.folder.openedBackground')} {
 		left: 50%;
 		transform: translateX(-50%);
 		background: var(--fg-main);
-		&.collapsed-uGXEbi {
+		&#{cls('guilds.folder.collapsed')} {
 			display: none;
 		}
-		&:not(.collapsed-uGXEbi) + .listItem-3SmSlK .wrapper-28eC3z {
+
+		&#{cls('!guilds.folder.collapsed')} + #{cls('guilds.list.item')} #{cls('guilds.list.server')} {
 			margin-bottom: 8px;
 		}
 	}

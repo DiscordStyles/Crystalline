@@ -1,20 +1,22 @@
-#app-mount {
-	.channel-1Shao0 {
+@use '../classes' as *;
+
+#{cls('mount')} {
+	#{cls('sidebar.dms.user')} {
 		max-width: unset;
 		margin: 0;
 		padding: 0;
 		overflow: hidden;
 		border-radius: 0;
 	}
-	.interactive-1vLZ_I {
+	#{cls('sidebar.dms.interactive')} {
 		padding: 4px 8px 4px 16px;
 		border-radius: 0;
-		.layout-1LjVue {
+		#{cls('sidebar.dms.layout')} {
 			padding-left: 0;
 		}
-		&.selected-3veCBZ {
+		&#{cls('sidebar.dms.selected')} {
 			background: var(--fg-active);
-			.layout-1LjVue {
+			#{cls('sidebar.dms.layout')} {
 				&::before {
 					content: '';
 					position: absolute;
@@ -30,7 +32,7 @@
 					height: 100%;
 					width: 1px;
 					box-shadow: 0 0 15px 2px rgb(var(--accent));
-					opacity: .75;
+					opacity: 0.75;
 				}
 			}
 		}

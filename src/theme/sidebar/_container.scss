@@ -1,5 +1,7 @@
-#app-mount {
-	.sidebar-1tnWFu {
+@use '../classes' as *;
+
+#{cls('mount')} {
+	#{cls('sidebar.sidebar')} {
 		background: transparent;
 		width: var(--sidebar-width);
 		border-right: 1px solid var(--border);
@@ -8,12 +10,12 @@
 		overflow: visible;
 	}
 
-	.container-1NXEtd,
-	.privateChannels-oVe7HL {
+	#{cls('sidebar.container')},
+	#{cls('sidebar.dms.container')} {
 		background: transparent;
 	}
-	.scroller-1ox3I2,
-	.scroller-WSmht3 {
+	#{cls('sidebar.channels.scroller')},
+	#{cls('sidebar.dms.scroller')} {
 		background: transparent;
 	}
 }

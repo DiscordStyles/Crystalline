@@ -1,13 +1,15 @@
-#app-mount {
-	.container-2o3qEW {
+@use '../classes' as *;
+
+#{cls('mount')} {
+	#{cls('members.container')} {
 		background: transparent;
 	}
-	
-	.members-3WRCEx {
+
+	#{cls('members.scroller')} {
 		background: transparent;
 		border-left: 1px solid var(--border);
 		width: var(--members-width);
-		.content-2a4AW9 {
+		#{cls('members.content')} {
 			height: 100% !important;
 		}
 		& > div {

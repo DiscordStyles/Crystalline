@@ -1,3 +1,5 @@
+@use '../classes' as *;
+
 html {
 	&.theme-light body::before {
 		--app-image: var(--app-image-light);
@@ -8,7 +10,7 @@ html {
 }
 
 body::before {
-	content: "";
+	content: '';
 	background-image: var(--app-image);
 	background-size: var(--app-image-size, cover);
 	background-position: var(--app-image-position, center);
@@ -18,14 +20,14 @@ body::before {
 	filter: blur(var(--app-image-blur));
 }
 
-#app-mount {
+#{cls('mount')} {
 	background: var(--bg-main);
 
-	.app-2CXKsg {
+	#{cls('app.inner')} {
 		background: transparent;
 	}
 
-	.bg-1QIAus {
+	#{cls('app.bg')} {
 		background-image: var(--grain);
 		background-size: var(--grain-size, 250px);
 		mix-blend-mode: overlay;

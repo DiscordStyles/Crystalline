@@ -1,20 +1,22 @@
-#app-mount {
-	.panels-3wFtMD {
+@use '../classes' as *;
+
+#{cls('mount')} {
+	#{cls('sidebar.panels.container')} {
 		background: transparent;
 		border-top: 1px solid var(--border);
 		position: relative;
 	}
 
 	// Connected voice
-	.container-1zzFcN {
+	#{cls('sidebar.connected.container')} {
 		padding: 0;
-		& > .flex-2S1XBF {
+		& > #{cls('common.flex')} {
 			padding: 0;
 			gap: 8px;
-			& > .inner-llGtyq {
+			& > #{cls('sidebar.connected.info.inner')} {
 				padding: 8px;
 			}
-			& > .flex-2S1XBF {
+			& > #{cls('common.flex')} {
 				margin: 0;
 				button {
 					height: 47px;
@@ -27,7 +29,7 @@
 			}
 		}
 	}
-	.actionButtons-2vEOUh {
+	#{cls('sidebar.connected.actions.container')} {
 		gap: 0;
 		padding: 0;
 		border-top: 1px solid var(--border);
@@ -42,14 +44,14 @@
 	}
 
 	// User area
-	.container-YkUktl {
+	#{cls('sidebar.panels.user.container')} {
 		flex-direction: column;
 		height: calc(var(--bottom-height) - 1px);
 		padding: 0;
-		.flex-2S1XBF {
+		#{cls('common.flex')} {
 			width: 100%;
 		}
-		.avatarWrapper-1B9FTW {
+		#{cls('sidebar.panels.user.avatarWrapper')} {
 			position: absolute;
 			right: calc(var(--bottom-height) / -1);
 			margin: 0;
@@ -66,7 +68,7 @@
 				background: var(--fg-active);
 			}
 		}
-		.nameTag-sc-gpq {
+		#{cls('sidebar.panels.user.name')} {
 			display: none;
 		}
 		button {

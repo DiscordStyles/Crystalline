@@ -1,3 +1,5 @@
-.typeWindows-2-g3UY {
+@use '../classes' as *;
+
+#{cls('windows.titleBar')} {
 	border-bottom: 1px solid var(--border);
 }

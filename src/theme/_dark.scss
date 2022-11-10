@@ -1,16 +1,16 @@
 .theme-dark,
 html.theme-dark #app-mount .theme-light .root-g14mjS,
 html.theme-dark .theme-light {
-	--border: hsl(0 0% 100% / .175);
+	--border: hsl(0 0% 100% / 0.175);
 
 	--bg-main: hsl(0 0% 0% / var(--app-opacity));
-	--bg-flyout: hsl(0 0% 0% / .65);
-	--bg-input: hsl(0 0% 100% / .075);
-	--bg-input-focus: hsl(0 0% 100% / .1);
+	--bg-flyout: hsl(0 0% 0% / 0.65);
+	--bg-input: hsl(0 0% 100% / 0.075);
+	--bg-input-focus: hsl(0 0% 100% / 0.1);
 
-	--fg-main: hsl(0 0% 100% / .085);
-	--fg-hover: hsl(0 0% 100% / .035);
-	--fg-active: hsl(0 0% 100% / .075);
+	--fg-main: hsl(0 0% 100% / 0.085);
+	--fg-hover: hsl(0 0% 100% / 0.035);
+	--fg-active: hsl(0 0% 100% / 0.075);
 
-	--shadow-flyout: 0 6px 10px hsl(0 0% 0% / .5);
+	--shadow-flyout: 0 6px 10px hsl(0 0% 0% / 0.5);
 }

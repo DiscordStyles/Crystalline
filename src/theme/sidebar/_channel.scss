@@ -1,39 +1,41 @@
-#app-mount {
-	.wrapper-NhbLHG {
+@use '../classes' as *;
+
+#{cls('mount')} {
+	#{cls('sidebar.channel.wrapper')} {
 		padding: 0;
 
-		.unread-36eUEm {
+		#{cls('sidebar.channel.unreadPill')} {
 			display: none;
 		}
 
 		&:hover {
-			.icon-2W8DHg {
+			#{cls('sidebar.channel.icon')} {
 				color: var(--interactive-hover);
 			}
-			.content-1gYQeQ {
+			#{cls('sidebar.channel.content')} {
 				background: var(--fg-hover);
 			}
 		}
-		&.modeUnread-3Cxepe {
+		&#{cls('sidebar.channel.unread')} {
 			--pill-colour: var(--interactive-active);
 			--pill-height: 50%;
-			.icon-2W8DHg {
+			#{cls('sidebar.channel.icon')} {
 				color: var(--interactive-active);
 			}
 		}
-		&.modeSelected-3DmyhH {
+		&#{cls('sidebar.channel.selected')} {
 			--pill-colour: rgb(var(--accent));
 			--pill-height: 100%;
-			.icon-2W8DHg {
+			#{cls('sidebar.channel.icon')} {
 				color: var(--interactive-active);
 			}
-			.content-1gYQeQ {
+			#{cls('sidebar.channel.content')} {
 				background: var(--fg-active);
 			}
 		}
 	}
 
-	.content-1gYQeQ {
+	#{cls('sidebar.channel.content')} {
 		padding: 4px 12px;
 		margin: 0;
 		border-radius: 0;

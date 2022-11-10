@@ -1,12 +1,14 @@
-#app-mount {
-	.menu-1QACrS {
+@use '../classes' as *;
+
+#{cls('mount')} {
+	#{cls('popout.menu.container')} {
 		border: 1px solid var(--border);
 		background: var(--bg-flyout);
 		box-shadow: var(--shadow-flyout);
 		border-radius: var(--radius);
-		
+
 		&::before {
-			content: "";
+			content: '';
 			border-radius: 6px;
 			position: absolute;
 			top: 0;
@@ -17,49 +19,49 @@
 			backdrop-filter: blur(var(--app-blur));
 		}
 
-		.scroller-1bVxF5 {
+		#{cls('popout.menu.scroller')} {
 			padding: 0 !important;
-			& > .item-1OdjEX:first-child {
+			& > #{cls('popout.menu.item.container')}:first-child {
 				border-radius: var(--radius) var(--radius) 0 0;
 			}
-			& > .item-1OdjEX:last-child {
+			& > #{cls('popout.menu.item.container')}:last-child {
 				border-radius: 0 0 var(--radius) var(--radius);
 			}
-			& > div[style*="height: 6px"] {
+			& > div[style*='height: 6px'] {
 				display: none;
 			}
 		}
 
-		.separator-1So4YB {
+		#{cls('popout.menu.separator')} {
 			margin: 0;
 			border-color: var(--border);
 		}
 
-		.submenuPaddingContainer-_k62dJ {
+		#{cls('popout.menu.sub.padding')} {
 			margin: 0 -4px;
 		}
 
-		[role="group"] {
-			&:first-child .item-1OdjEX:first-child {
+		#{cls('popout.menu.group')} {
+			&:first-child #{cls('popout.menu.item.container')}:first-child {
 				border-radius: var(--radius) var(--radius) 0 0;
 			}
-			&:nth-last-child(2) .item-1OdjEX:last-child,
-			&:nth-last-child(2) .item-1OdjEX:nth-last-child(2) {
+			&:nth-last-child(2) #{cls('popout.menu.item.container')}:last-child,
+			&:nth-last-child(2) #{cls('popout.menu.item.container')}:nth-last-child(2) {
 				border-radius: 0 0 var(--radius) var(--radius);
 			}
 		}
 	}
-	.item-1OdjEX {
+	#{cls('popout.menu.item.container')} {
 		margin: 0;
 		padding: 8px 12px;
 		border-radius: 0;
-		&:active:not(.hideInteraction-2jPGL_) {
-			background: rgb(var(--accent) / .05);
-			color: rgb(var(--accent) / .55);
+		&:active#{cls('!popout.menu.item.hideInteraction')} {
+			background: rgb(var(--accent) / 0.05);
+			color: rgb(var(--accent) / 0.55);
 		}
-		&.focused-3qFvc8 {
-			background: rgb(var(--accent) / .1);
-			color: rgb(var(--accent))
+		&#{cls('popout.menu.item.focused')} {
+			background: rgb(var(--accent) / 0.1);
+			color: rgb(var(--accent));
 		}
 	}
 }

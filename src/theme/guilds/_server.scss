@@ -1,22 +1,24 @@
-#app-mount {
-	.guilds-2JjMmN {
-		.pill-2RsI5Q {
+@use '../classes' as *;
+
+#{cls('mount')} {
+	#{cls('guilds.container')} {
+		#{cls('guilds.list.pill')} {
 			overflow: visible;
 		}
-		.item-2LIpTv {
+		#{cls('guilds.list.pillItem')} {
 			margin-left: 0;
 			width: 2px;
 			border-radius: 0;
 			box-shadow: 0 0 10px 1px var(--interactive-active);
 		}
 	}
-	
-	.listItem-3SmSlK {
+
+	#{cls('guilds.list.item')} {
 		margin: 0;
 	}
 
-	.tutorialContainer-1pL9QS {
-		.pill-L_aLMQ {
+	#{cls('guilds.home')} {
+		#{cls('guilds.homePill')} {
 			top: 50%;
 			transform: translateY(-50%);
 		}
@@ -26,7 +28,7 @@
 			height: auto !important;
 		}
 	}
-	.guildSeparator-a4uisj {
+	#{cls('guilds.separator')} {
 		width: var(--guilds-width);
 		border-radius: 0;
 		background: var(--border);

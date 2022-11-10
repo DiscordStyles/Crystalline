@@ -1,9 +1,11 @@
-#app-mount {
-	.chat-2ZfjoI {
+@use '../classes' as *;
+
+#{cls('mount')} {
+	#{cls('chat.container')} {
 		background: transparent;
 		overflow: visible;
 	}
-	.content-1jQy2l::before {
+	#{cls('chat.content')}::before {
 		content: none;
 	}
 }

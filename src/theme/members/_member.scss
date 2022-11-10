@@ -1,19 +1,20 @@
-#app-mount {
-	.member-2gU6Ar {
-		margin: 0;
-		padding: 0;
-		max-width: unset;
+@use '../classes' as *;
 
-		.layout-1qmrhw {
-			border-radius: 0;
-			padding: 4px 16px;
-		}
+#{cls('mount member.container')} {
+	margin: 0;
+	padding: 0;
+	max-width: unset;
+	background: transparent;
 
-		&:hover .layout-1qmrhw {
-			background: var(--fg-hover);
-		}
-		&.selected-1-Z6gm .layout-1qmrhw {
-			background: var(--fg-active);
-		}
+	#{cls('member.layout')} {
+		border-radius: 0;
+		padding: 4px 16px;
+	}
+
+	&:hover #{cls('member.layout')} {
+		background: var(--fg-hover);
+	}
+	&#{cls('member.selected member.layout')} {
+		background: var(--fg-active);
 	}
 }

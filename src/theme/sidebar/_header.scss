@@ -1,5 +1,7 @@
-#app-mount {
-	.header-3OsQeK {
+@use '../classes' as *;
+
+#{cls('mount')} {
+	#{cls('sidebar.head.header')} {
 		box-shadow: none;
 		border-bottom: 1px solid var(--border);
 		height: var(--toolbar-height);
@@ -9,21 +11,19 @@
 			background: var(--fg-hover);
 		}
 	}
-	.selected-1GtAC5 .header-3OsQeK {
+	#{cls('sidebar.head.selected')} #{cls('sidebar.head.header')} {
 		background: var(--fg-active);
 	}
-	.headerContent-2SNbie {
+	#{cls('sidebar.head.content')} {
 		flex: 1;
 	}
 
-	.bannerImage-ubW8K- {
-		width: 100%;
-	}
-	.bannerImg-2PzH6z {
+	#{cls('sidebar.head.image')},
+	#{cls('sidebar.head.img')} {
 		width: 100%;
 	}
 
-	.searchBar-3TnChZ {
+	#{cls('sidebar.head.search')} {
 		height: calc(var(--toolbar-height) - 1px);
 		box-shadow: none;
 		border-bottom: 1px solid var(--border);

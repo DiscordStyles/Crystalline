@@ -1,6 +1,6 @@
 # Crystalline
 
-A beautiful frosted glass theme with support for both dark and light themes.
+A beautiful and uniform frosted glass theme with support for both dark and light themes.
 
 ![Dark Theme](https://i.imgur.com/UzbOWdo.jpeg)
 ![Light Theme](https://i.imgur.com/6qiqGjH.jpeg)

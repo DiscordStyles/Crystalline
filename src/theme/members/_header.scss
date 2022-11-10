@@ -1,9 +1,11 @@
-#app-mount {
-	.member-2gU6Ar + .membersGroup-2eiWxl {
+@use '../classes' as *;
+
+#{cls('mount')} {
+	#{cls('member.container')} + #{cls('members.header')} {
 		border-top: 1px solid var(--border);
 		margin-top: 16px;
 	}
-	.membersGroup-2eiWxl {
+	#{cls('members.header')} {
 		padding: 16px 16px 8px;
 		height: auto;
 	}

@@ -1,5 +1,8 @@
-#app-mount {
-	.newMessagesBar-1hF-9G {
+@use '../classes' as *;
+
+#{cls('mount')} {
+	// New messages
+	#{cls('chat.bars.newMessages.container')} {
 		left: 0;
 		right: 0;
 		border-bottom: 1px solid var(--border);
@@ -23,7 +26,8 @@
 		}
 	}
 
-	.attachedBars-2BCP3l {
+	// Replying
+	#{cls('chat.bars.reply.attachedBars')} {
 		background: transparent;
 		border-radius: 0;
 		position: relative;
@@ -36,18 +40,19 @@
 			width: 1px;
 		}
 	}
-	.clipContainer-31nYlH {
+	#{cls('chat.bars.reply.clip')} {
 		margin: 0;
 		padding: 0;
 	}
-	.replyBar-1oi75v {
+	#{cls('chat.bars.reply.bar')} {
 		background: var(--fg-main);
 		border-top: 1px solid var(--border);
 		border-radius: 0;
 		position: relative;
 	}
 
-	.typing-2J1mQU {
+	// Typing/slow mode
+	#{cls('chat.textbox.typing.container')} {
 		left: 0;
 		right: 0;
 		padding: 0 16px;
@@ -57,7 +62,7 @@
 		top: -25px;
 		backdrop-filter: blur(var(--app-blur));
 	}
-	.ellipsis-1e7x0D {
+	#{cls('chat.textbox.typing.ellipsis')} {
 		margin-left: 0;
 	}
 }
