@@ -28,6 +28,7 @@ body::before {
 	}
 
 	#{cls('app.bg')} {
+		display: var(--grain-display, block);
 		background-image: var(--grain);
 		background-size: var(--grain-size, 250px);
 		mix-blend-mode: overlay;

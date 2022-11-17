@@ -10,7 +10,7 @@
 	}
 	#{cls('guilds.folder.wrapper')} {
 		width: var(--guilds-width);
-		& > #{cls('guilds.list.item')} #{cls('guilds.list.server')} foreignObject {
+		& > #{cls('guilds.list.item guilds.list.server')} foreignObject {
 			mask: none;
 		}
 		[role='group'] {
@@ -27,7 +27,7 @@
 			display: none;
 		}
 
-		&#{cls('!guilds.folder.collapsed')} + #{cls('guilds.list.item')} #{cls('guilds.list.server')} {
+		&#{cls('!guilds.folder.collapsed')} + #{cls('guilds.list.item guilds.list.server')} {
 			margin-bottom: 8px;
 		}
 	}

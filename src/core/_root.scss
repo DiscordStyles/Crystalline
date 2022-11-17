@@ -10,20 +10,21 @@
 	--app-image-light: url('https://i.imgur.com/i0LtTx1.jpg'); /* The image used for Light Mode */
 
 	/*
-	 * Background image modifier variables
-	 */
+	* Background image modifier variables
+	*/
 	--app-image-blur: 25px; /* Blur intensity of --app-image | Must end in px */
+	--app-opacity: 0.85; /* The opacity of the foreground */
 
 	/**
 	 * Accent variables
 	 */
 	--accent: 203 78 205; /* Colour used around the app | Values are in R G B format */
 
-	/**
-	 * Opacity variables
+	/*
+	 * Grain variables
 	 */
-	--app-opacity: 0.85; /* The opacity of the foreground */
 	--grain-opacity: 0.5; /* The opacity of the film grain of the --app-image */
+	--grain-display: block; /* Visibility of the grain. If you're experiencing performance issues, set this to: none */
 
 	/**
 	 * Width variables

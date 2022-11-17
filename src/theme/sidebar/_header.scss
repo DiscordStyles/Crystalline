@@ -11,15 +11,15 @@
 			background: var(--fg-hover);
 		}
 	}
-	#{cls('sidebar.head.selected')} #{cls('sidebar.head.header')} {
+	#{cls('sidebar.head.selected sidebar.head.header')} {
 		background: var(--fg-active);
 	}
 	#{cls('sidebar.head.content')} {
 		flex: 1;
 	}
 
-	#{cls('sidebar.head.image')},
-	#{cls('sidebar.head.img')} {
+	#{cls('sidebar.head.bannerImage')},
+	#{cls('sidebar.head.bannerImg')} {
 		width: 100%;
 	}
 

@@ -1,7 +1,7 @@
 @use '../classes' as *;
 
 #{cls('mount')} {
-	#{cls('member.container')} + #{cls('members.header')} {
+	#{cls('member.container+members.header')} {
 		border-top: 1px solid var(--border);
 		margin-top: 16px;
 	}

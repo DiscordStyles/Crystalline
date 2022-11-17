@@ -1,8 +1,8 @@
 @use '../classes' as *;
 
 #{cls('mount')} {
-	#{cls('input.container!input.multiInput,input.multiField')},
-	#{cls('input.container+input.multiInput')} {
+	#{cls('input.container!input.multiInput|input.multiField')},
+	#{cls('input.container:input.multiInput')} {
 		border: 1px solid var(--border);
 		background: var(--bg-input);
 		border-radius: var(--radius);
@@ -27,7 +27,7 @@
 		top: 14px;
 		left: 12px;
 		pointer-events: none;
-		& + #{cls('input.container!input.multiInput,input.multiField')} {
+		& + #{cls('input.container!input.multiInput|input.multiField')} {
 			padding-left: 38px;
 		}
 	}

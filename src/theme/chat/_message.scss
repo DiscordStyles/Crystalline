@@ -33,7 +33,7 @@
 	}
 }
 
-#{cls('common.mode.mouse+common.motion.full chat.message.container!chat.message.mentioned')}:hover {
+#{cls('common.mode.mouse:common.motion.full chat.message.container!chat.message.mentioned')}:hover {
 	background: var(--fg-hover);
 	transition: var(--message-highlight-duration) ease background;
 }
