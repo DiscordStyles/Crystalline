@@ -1,3 +1,11 @@
+.theme-light {
+  --user-popout-bg: hsl(0 0% 0% / 0.085);
+}
+
+.theme-dark {
+  --user-popout-bg: hsl(0 0% 100% / 0.085);
+}
+
 :root {
   --grain: url("https://i.imgur.com/86zHUGF.png");
   --radius: 6px;
@@ -382,6 +390,7 @@ body::before {
   min-width: unset;
   padding: 0;
   border-radius: 0;
+  cursor: pointer;
 }
 #app-mount .container-YkUktl .avatarWrapper-1B9FTW:hover {
   background: var(--fg-active);
@@ -968,8 +977,27 @@ body::before {
   color: rgb(var(--accent)/0.55);
 }
 #app-mount .item-1OdjEX.focused-3qFvc8 {
-  background: rgb(var(--accent)/0.1);
-  color: rgb(var(--accent));
+  background: var(--fg-hover);
+  color: var(--text-normal);
+}
+#app-mount .wrapper--nA0oy {
+  border-bottom: 1px solid var(--border);
+  padding: 0;
+}
+#app-mount .customItem-2CxBSo {
+  width: 100%;
+}
+#app-mount .customItem-2CxBSo:not(:first-child) > .button-1zW0-r {
+  border-left: 1px solid var(--border);
+}
+#app-mount .button-1zW0-r {
+  width: 100%;
+  border-radius: 0;
+  background: transparent;
+  padding: 4px 0;
+}
+#app-mount .button-1zW0-r:hover {
+  background: var(--fg-hover);
 }
 
 #app-mount .userPopoutOuter-3AVBmJ {
@@ -992,7 +1020,7 @@ body::before {
   height: auto;
   padding: 6px 8px;
   gap: 6px;
-  background: var(--fg-main);
+  background: var(--user-popout-bg);
   border: none;
 }
 #app-mount .userPopoutOuter-3AVBmJ .roleCircle-3K9O3d,
@@ -1016,9 +1044,13 @@ body::before {
 }
 #app-mount .userPopoutInner-1hXSeY:not(.userProfileInnerThemedNonPremium-1gT-zY) .overlayBackground-1KgwVi {
   border: 1px solid var(--border);
+  margin: 16px 8px 8px;
 }
 #app-mount .userPopoutInner-1hXSeY:not(.userProfileInnerThemedNonPremium-1gT-zY) .overlayBackground-1KgwVi > .section-3FmfOT:first-child {
   padding-bottom: 0;
+}
+#app-mount .userPopoutInner-1hXSeY:not(.userProfileInnerThemedNonPremium-1gT-zY) .overlayBackground-1KgwVi .input-2g-os5 {
+  background: var(--user-popout-bg);
 }
 #app-mount .userProfileInnerThemedNonPremium-1gT-zY {
   background: transparent;
@@ -1030,6 +1062,9 @@ body::before {
 }
 #app-mount .section-3FmfOT {
   padding: 16px;
+}
+#app-mount .scroller-1jBQYo {
+  padding: 0 !important;
 }
 #app-mount .scroller-1jBQYo > .section-3FmfOT {
   border-top: 1px solid var(--border);
