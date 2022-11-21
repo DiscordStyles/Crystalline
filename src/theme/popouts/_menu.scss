@@ -60,8 +60,27 @@
 			color: rgb(var(--accent) / 0.55);
 		}
 		&#{cls('popout.menu.item.focused')} {
-			background: rgb(var(--accent) / 0.1);
-			color: rgb(var(--accent));
+			background: var(--fg-hover);
+			color: var(--text-normal);
+		}
+	}
+	#{cls('popout.menu.quickReactions.container')} {
+		border-bottom: 1px solid var(--border);
+		padding: 0;
+	}
+	#{cls('popout.menu.quickReactions.item')} {
+		width: 100%;
+		&:not(:first-child) > #{cls('popout.menu.quickReactions.button')} {
+			border-left: 1px solid var(--border);
+		}
+	}
+	#{cls('popout.menu.quickReactions.button')} {
+		width: 100%;
+		border-radius: 0;
+		background: transparent;
+		padding: 4px 0;
+		&:hover {
+			background: var(--fg-hover);
 		}
 	}
 }

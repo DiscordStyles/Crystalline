@@ -20,7 +20,7 @@
 			height: auto;
 			padding: 6px 8px;
 			gap: 6px;
-			background: var(--fg-main);
+			background: var(--user-popout-bg);
 			border: none;
 		}
 		#{cls('roles.circle')},
@@ -32,11 +32,9 @@
 			--border: hsl(0 0% 0% / 0.175) !important;
 		}
 	}
-	#{cls('popout.user.inner')} {
-		&::before {
-			width: 100%;
-			height: 100%;
-		}
+	#{cls('popout.user.inner')}::before {
+		width: 100%;
+		height: 100%;
 	}
 	#{cls('popout.user.innerWithBanner popout.user.avatarWrapper')} {
 		top: 72px;
@@ -48,8 +46,12 @@
 	}
 	#{cls('popout.user.inner!popout.user.innerNonPremium popout.user.overlay')} {
 		border: 1px solid var(--border);
+		margin: 16px 8px 8px;
 		& > #{cls('popout.user.section')}:first-child {
 			padding-bottom: 0;
+		}
+		#{cls('input.container')} {
+			background: var(--user-popout-bg);
 		}
 	}
 
@@ -64,8 +66,11 @@
 	#{cls('popout.user.section')} {
 		padding: 16px;
 	}
-	#{cls('popout.user.scroller')} > #{cls('popout.user.section')} {
-		border-top: 1px solid var(--border);
+	#{cls('popout.user.scroller')} {
+		padding: 0 !important;
+		& > #{cls('popout.user.section')} {
+			border-top: 1px solid var(--border);
+		}
 	}
 	#{cls('popout.user.divider')} {
 		display: none;

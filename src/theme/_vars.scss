@@ -1,3 +1,10 @@
+.theme-light {
+	--user-popout-bg: hsl(0 0% 0% / 0.085);
+}
+.theme-dark {
+	--user-popout-bg: hsl(0 0% 100% / 0.085);
+}
+
 :root {
 	--grain: url('https://i.imgur.com/86zHUGF.png');
 
