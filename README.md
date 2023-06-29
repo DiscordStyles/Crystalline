@@ -1,3 +1,12 @@
+# Unmaintained theme
+I cannot be bothered maintaining a new theme, so I will be discontinuing this theme.  
+Anyone is welcome to take over the theme though. And if so, I'll give you access to this repo.
+
+- - - 
+<br>
+<br>
+<br>
+
 # Crystalline
 
 A beautiful and uniform frosted glass theme with support for both dark and light themes.
